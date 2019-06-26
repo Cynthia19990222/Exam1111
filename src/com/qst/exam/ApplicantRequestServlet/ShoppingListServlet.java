@@ -59,6 +59,40 @@ public class ShoppingListServlet extends HttpServlet {
 		out.println("<p><a href= 'foodChoose.jsp'>继续购买 </a></p>");
 		// TODO Auto-generated method stub
 		//doGet(request, response);
+		
+		
+		
+		
+		
+		
+		
+		if (car != null && car.size() > 0) {
+			out.println("<p>您购买的食物有:<p/>");
+			for(String foodName : car.keySet()) {
+				out.println("<p>" + foodName + "," + car.get(foodName) + " 份</P>");
+			}
+			
+		} else {
+			out.println("<p>您还未购买任何食物!</p>");
+		}
+		out.println("<p><a href= 'foodChoose.jsp'>继续购买 </a></p>");
+		// TODO Auto-generated method stub
+		//doGet(request, response);
+	
+	    
+	
+	
+	
+	if (car != null && car.size() > 0) {
+		out.println("<p>您购买的食物有:<p/>");
+		for(String foodName : car.keySet()) {
+			out.println("<p>" + foodName + "," + car.get(foodName) + " 份</P>");
+		}
+		
+	} else {
+		out.println("<p>您还未购买任何食物!</p>");
 	}
-
+	out.println("<p><a href= 'foodChoose.jsp'>继续购买 </a></p>");
+	// TODO Auto-generated method stub
+	//doGet(request, response);
 }
